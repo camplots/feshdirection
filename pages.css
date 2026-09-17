@@ -8,6 +8,8 @@
 .p-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:0 0 28px}
 .p-tile{aspect-ratio:4/3;border:2px dashed var(--muted);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:11px;letter-spacing:.12em}
 .calc-frame{min-height:78vh;border:3px solid var(--ink);background:#11182108;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:12px;letter-spacing:.14em}
+.calc-main{padding-top:88px}
+.calc-main iframe{display:block;width:100%;height:calc(100vh - 88px);border:0;background:#0b0f14}
 .footnav{display:flex;flex-wrap:wrap;gap:14px 26px;margin:0 0 60px;font-size:12px;letter-spacing:.08em}
 .footnav a{color:#ffffffb3}
 .footnav a:hover{color:var(--sun)}
