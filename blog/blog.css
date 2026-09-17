@@ -85,10 +85,16 @@ figcaption b{display:block;color:var(--ink);font-size:14px}
 .btn{display:inline-block;border:0;border-radius:100px;padding:18px 25px;font-weight:800;font-size:13px;letter-spacing:.03em;cursor:pointer;background:var(--ink);color:var(--paper)}
 .slot-btn{display:inline-block;border:2px dashed var(--ink);border-radius:100px;padding:18px 25px;font-weight:800;font-size:13px;letter-spacing:.03em;color:#11182199}
 
-.faq-item{display:grid;grid-template-columns:56px 1fr;gap:18px;align-items:start;border-top:2px solid var(--ink);padding:24px 0}
-.faq-item:last-child{border-bottom:2px solid var(--ink)}
+.faq-item{border-top:2px solid var(--ink)}
+.faq-item:last-of-type{border-bottom:2px solid var(--ink)}
+.faq-item summary{display:grid;grid-template-columns:56px 1fr auto;gap:18px;align-items:start;padding:24px 0;cursor:pointer;list-style:none}
+.faq-item summary::-webkit-details-marker{display:none}
 .faq-item .n{font-size:13px;color:var(--blue);font-weight:800;letter-spacing:.08em;padding-top:5px}
-.faq-item p{font-size:19px;font-weight:700;line-height:1.35;margin:0}
+.faq-item .q{font-size:19px;font-weight:700;line-height:1.35}
+.faq-item summary::after{content:"+";font-size:26px;font-weight:800;color:var(--blue);line-height:1}
+.faq-item[open] summary::after{content:"–"}
+.faq-a{margin-left:74px;padding:0 60px 28px 0;max-width:640px}
+.faq-a p{font-size:17px;line-height:1.65;margin:0}
 
 .table-wrap{overflow-x:auto;margin:44px 0;box-shadow:12px 12px 0 var(--blue)}
 table{border-collapse:collapse;width:100%;min-width:680px;background:#fff;border:2px solid var(--ink)}
@@ -118,4 +124,6 @@ td.batt{background:#f8cd2a24}
 .cta{padding:34px 24px;box-shadow:8px 8px 0 var(--ink)}
 .footline{display:block;line-height:2}
 .b-hero{padding:20vh 7vw 14vw}
+.faq-item summary{grid-template-columns:40px 1fr auto}
+.faq-a{margin-left:40px;padding-right:0}
 }
