@@ -13,5 +13,7 @@
 .footnav{display:flex;flex-wrap:wrap;gap:14px 26px;margin:0 0 60px;font-size:12px;letter-spacing:.08em}
 .footnav a{color:#ffffffb3}
 .footnav a:hover{color:var(--sun)}
+.footer-slim{padding:26px 7vw}
+.footer-slim .footnav{margin:0;gap:12px 20px}
 @media(max-width:760px){.p-hero{padding:20vh 7vw 12vw}.p-hero h1{font-size:40px}.p-grid{grid-template-columns:1fr 1fr}}
 @media (prefers-color-scheme: dark){.slot,.calc-frame{background:#f7f1e408}}
