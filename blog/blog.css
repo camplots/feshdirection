@@ -7,7 +7,8 @@ a{color:inherit;text-decoration:none}
 .progress{position:fixed;top:0;left:0;height:4px;width:0;background:var(--sun);z-index:20}
 
 .nav{min-height:88px;padding:0 4vw;display:flex;align-items:center;justify-content:space-between;position:absolute;top:0;width:100%;z-index:3;color:#fff;border-bottom:1px solid #ffffff55}
-.logo{font-weight:800;letter-spacing:.05em;font-size:17px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.02em;font-size:19px;line-height:1}
+.logo-mark{flex:none;width:26px;height:26px;border-radius:50%;background:radial-gradient(circle at 42% 40%,#fff9c7 0 6%,#f8cd2a 32%,#ed8e51 78%)}
 .links{display:flex;gap:28px;font-size:13px;letter-spacing:.08em}
 .links a{color:inherit}
 
@@ -126,4 +127,23 @@ td.batt{background:#f8cd2a24}
 .b-hero{padding:20vh 7vw 14vw}
 .faq-item summary{grid-template-columns:40px 1fr auto}
 .faq-a{margin-left:40px;padding-right:0}
+}
+
+@media (prefers-color-scheme: dark){
+:root{--ink:#f7f1e4;--paper:#111821}
+.a-hero{background:#111821;color:#f7f1e4}
+.case{background:#161d27}
+table{background:#161d27}
+td{border-top-color:#f7f1e426}
+td.batt{background:#f8cd2a1f}
+.principle .tag{color:#111821}
+.warning{color:#111821}
+.cta{color:#111821}
+.b-chip,.b-read{color:#111821}
+.fnum,.faq-item .n,.faq-item summary::after,.group-label{color:#93a5f5}
+.b-card:hover .b-title{color:#93a5f5}
+.a-toc a{border-left-color:#f7f1e422}
+.sources li{border-color:#f7f1e433}
+.footer{background:#0b1017}
+.photo-slot{background:#f7f1e408}
 }
