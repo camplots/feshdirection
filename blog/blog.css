@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap');
 :root{--ink:#111821;--paper:#f7f1e4;--blue:#2849c9;--sun:#f8cd2a;--green:#78e6a0;--coral:#ef684b;--muted:#81817a}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;overflow-x:hidden}
@@ -7,10 +8,12 @@ a{color:inherit;text-decoration:none}
 .progress{position:fixed;top:0;left:0;height:4px;width:0;background:var(--sun);z-index:20}
 
 .nav{min-height:88px;padding:0 4vw;display:flex;align-items:center;justify-content:space-between;position:absolute;top:0;width:100%;z-index:3;color:#fff;border-bottom:1px solid #ffffff55}
-.logo{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.02em;font-size:19px;line-height:1}
-.logo-mark{flex:none;width:26px;height:26px;border-radius:50%;background:radial-gradient(circle at 42% 40%,#fff9c7 0 6%,#f8cd2a 32%,#ed8e51 78%)}
-.logo-img{height:38px;width:auto;border-radius:6px;display:block}
-.footer .logo-img{height:44px}
+.logo{display:flex;align-items:center;gap:.32em;font-family:Lato,Arial,sans-serif;font-size:22px;line-height:1}
+.lw{font-weight:900;letter-spacing:.06em}
+.lb{font-weight:700;letter-spacing:-.01em}
+.ldot{flex:none;width:.26em;height:.26em;border-radius:50%;background:#e68c19}
+.nav .logo,.footer .logo{color:#e9edf6}
+.footer .logo{font-size:26px}
 .links{display:flex;gap:28px;font-size:13px;letter-spacing:.08em}
 .links a{color:inherit}
 
@@ -190,8 +193,8 @@ section{scroll-margin-top:90px}
 .footline{display:block;line-height:2}
 .fn-primary a{padding:10px 14px;font-size:11px}
 .fn-secondary a{font-size:11px}
-.logo-img{height:30px}
-.footer .logo-img{height:36px}
+.nav .logo{font-size:18px}
+.footer .logo{font-size:22px}
 }
 
 @media (prefers-color-scheme: dark){
