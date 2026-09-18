@@ -96,6 +96,16 @@ figcaption b{display:block;color:var(--ink);font-size:14px}
 .faq-item[open] summary::after{content:"–"}
 .faq-a{margin-left:74px;padding:0 60px 28px 0;max-width:640px}
 .faq-a p{font-size:17px;line-height:1.65;margin:0}
+.cases3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:40px 0}
+.cases3 .case .big{font-size:clamp(24px,2.2vw,32px)}
+.defline{font-size:15px;line-height:1.5;margin:0 0 10px}
+.defline b{letter-spacing:.06em}
+.mathblock{display:flex;align-items:stretch;gap:14px;flex-wrap:wrap;margin:36px 0 20px}
+.mathblock .cell{border:2px solid var(--ink);background:#fff;padding:22px 26px;text-align:center;box-shadow:8px 8px 0 var(--sun)}
+.mathblock .cell b{display:block;font-size:clamp(30px,3.4vw,48px);font-weight:900;letter-spacing:-.03em}
+.mathblock .cell span{font-size:12px;letter-spacing:.1em;color:var(--muted);font-weight:bold}
+.mathblock .op{align-self:center;font-size:30px;font-weight:900}
+.sub-h{font-size:clamp(22px,2.4vw,30px);letter-spacing:-.02em;margin:36px 0 16px}
 
 .table-wrap{overflow-x:auto;margin:44px 0;box-shadow:12px 12px 0 var(--blue)}
 table{border-collapse:collapse;width:100%;min-width:680px;background:#fff;border:2px solid var(--ink)}
@@ -139,6 +149,7 @@ td.batt{background:#f8cd2a24}
 :root{--ink:#f7f1e4;--paper:#111821}
 .a-hero{background:#111821;color:#f7f1e4}
 .case{background:#161d27}
+.mathblock .cell{background:#161d27}
 table{background:#161d27}
 td{border-top-color:#f7f1e426}
 td.batt{background:#f8cd2a1f}
