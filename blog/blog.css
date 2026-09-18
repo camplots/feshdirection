@@ -106,6 +106,26 @@ figcaption b{display:block;color:var(--ink);font-size:14px}
 .mathblock .cell span{font-size:12px;letter-spacing:.1em;color:var(--muted);font-weight:bold}
 .mathblock .op{align-self:center;font-size:30px;font-weight:900}
 .sub-h{font-size:clamp(22px,2.4vw,30px);letter-spacing:-.02em;margin:36px 0 16px}
+.band{padding:6vw 7vw}
+.band-in{max-width:880px;margin:0 auto}
+.band .a-section{margin:0}
+.band h2{border-top:0;padding-top:0}
+.band.blue{background:var(--blue);color:#fff}
+.band.sun{background:var(--sun);color:#111821}
+.band.ink{background:var(--ink);color:#fff}
+.band.blue .numrow,.band.blue .finding,.band.ink .numrow{border-top-color:#ffffff55}
+.band.blue .finding:last-child{border-bottom-color:#ffffff55}
+.band.blue .fnum{color:var(--sun)}
+.band.sun .fnum{color:var(--blue)}
+.band.ink .lever{border-top-color:#ffffff55}
+.band.ink .group-label{color:var(--sun)}
+.band.blue figcaption,.band.ink figcaption{color:#ffffffb3}
+.band.blue figcaption b,.band.ink figcaption b{color:#fff}
+.toc-band{background:var(--paper);padding:24px 7vw;border-bottom:2px solid var(--ink)}
+.toc-band b{font-size:11px;letter-spacing:.16em;color:var(--muted);margin-right:18px}
+.toc-band a{display:inline-block;margin:4px 20px 4px 0;font-size:13px;color:var(--muted)}
+.toc-band a:hover{color:var(--ink)}
+.cta-p{font-size:clamp(21px,2.3vw,29px);line-height:1.35;font-weight:700;letter-spacing:-.02em;margin:0 0 30px;max-width:660px}
 
 .table-wrap{overflow-x:auto;margin:44px 0;box-shadow:12px 12px 0 var(--blue)}
 table{border-collapse:collapse;width:100%;min-width:680px;background:#fff;border:2px solid var(--ink)}
@@ -150,6 +170,10 @@ td.batt{background:#f8cd2a24}
 .a-hero{background:#111821;color:#f7f1e4}
 .case{background:#161d27}
 .mathblock .cell{background:#161d27}
+.band.ink{background:#f7f1e4;color:#111821}
+.band.ink .lever,.band.ink .numrow{border-top-color:#11182155}
+.band.ink .group-label{color:var(--blue)}
+.band.blue .numrow,.band.blue .finding{border-top-color:#ffffff55}
 table{background:#161d27}
 td{border-top-color:#f7f1e426}
 td.batt{background:#f8cd2a1f}
