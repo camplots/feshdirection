@@ -9,6 +9,8 @@ a{color:inherit;text-decoration:none}
 .nav{min-height:88px;padding:0 4vw;display:flex;align-items:center;justify-content:space-between;position:absolute;top:0;width:100%;z-index:3;color:#fff;border-bottom:1px solid #ffffff55}
 .logo{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.02em;font-size:19px;line-height:1}
 .logo-mark{flex:none;width:26px;height:26px;border-radius:50%;background:radial-gradient(circle at 42% 40%,#fff9c7 0 6%,#f8cd2a 32%,#ed8e51 78%)}
+.logo-img{height:38px;width:auto;border-radius:6px;display:block}
+.footer .logo-img{height:44px}
 .links{display:flex;gap:28px;font-size:13px;letter-spacing:.08em}
 .links a{color:inherit}
 
@@ -188,6 +190,8 @@ section{scroll-margin-top:90px}
 .footline{display:block;line-height:2}
 .fn-primary a{padding:10px 14px;font-size:11px}
 .fn-secondary a{font-size:11px}
+.logo-img{height:30px}
+.footer .logo-img{height:36px}
 }
 
 @media (prefers-color-scheme: dark){
