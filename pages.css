@@ -23,6 +23,8 @@
 .p-hero .a-kicker-row{margin-bottom:26px}
 .p-hero p{font-size:clamp(18px,1.6vw,22px);line-height:1.5;color:#f7f1e4d9;max-width:660px;margin:0 0 20px}
 .anchor-link{display:inline-block;font-weight:800;font-size:13px;letter-spacing:.1em;color:var(--sun);margin-top:14px}
+.p-sec a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.p-sec a:hover{color:var(--sun)}
 .p-sec{margin:0 0 72px}
 .ii-stat{background:var(--coral);color:#111821;padding:44px;display:flex;gap:40px;align-items:center;flex-wrap:wrap;margin:0 0 28px;box-shadow:12px 12px 0 var(--ink)}
 .ii-stat .big{font-size:clamp(56px,8vw,120px);font-weight:900;letter-spacing:-.04em;line-height:1}
