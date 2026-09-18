@@ -154,6 +154,17 @@ td.batt{background:#f8cd2a24}
 
 .disclaimer{border-top:3px solid var(--ink);padding-top:24px;font-size:13px;line-height:1.65;color:var(--muted)}
 
+/* ---------- article lists ---------- */
+.a-list{list-style:none;padding:0;margin:0 0 28px;display:grid;gap:12px}
+.a-list li{position:relative;font-size:18px;line-height:1.6;color:inherit}
+.a-list.dots li{padding-left:30px}
+.a-list.dots li::before{content:"";position:absolute;left:2px;top:.62em;width:10px;height:10px;background:var(--sun);box-shadow:2px 2px 0 var(--ink)}
+.a-list.ticks li{padding-left:40px}
+.a-list.ticks li::before{content:"✓";position:absolute;left:0;top:1px;width:22px;height:22px;background:var(--green);color:#111821;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;box-shadow:2px 2px 0 var(--ink)}
+.band.sun .a-list.dots li::before{background:var(--ink);box-shadow:2px 2px 0 #11182133}
+.band.ink .sources li{border-color:#f7f1e433}
+.band.sun .sources li{border-color:#11182155}
+
 .footer{background:var(--ink);color:#fff;padding:8vw 7vw 35px}
 .footline{border-top:1px solid #ffffff50;padding-top:22px;display:flex;justify-content:space-between;gap:20px;font-size:12px;letter-spacing:.07em}
 .fn-primary{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 24px}
