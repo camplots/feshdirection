@@ -112,6 +112,12 @@ td.batt{background:#f8cd2a24}
 
 .footer{background:var(--ink);color:#fff;padding:8vw 7vw 35px}
 .footline{border-top:1px solid #ffffff50;padding-top:22px;display:flex;justify-content:space-between;gap:20px;font-size:12px;letter-spacing:.07em}
+.fn-primary{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 24px}
+.fn-primary a{border:1px solid #ffffff40;border-radius:100px;padding:12px 18px;font-size:12px;letter-spacing:.08em;color:#fff}
+.fn-primary a:hover{border-color:var(--sun);color:var(--sun)}
+.fn-secondary{display:flex;flex-wrap:wrap;gap:10px 24px;font-size:12px;letter-spacing:.08em}
+.fn-secondary a{color:#ffffffb3}
+.fn-secondary a:hover{color:var(--sun)}
 
 @media(max-width:1100px){.a-wrap{grid-template-columns:1fr;max-width:760px;margin:0 auto}.a-toc{display:none}}
 @media(max-width:760px){
