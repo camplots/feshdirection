@@ -1,6 +1,6 @@
 .p-hero{background:#111821;color:#f7f1e4;padding:24vh 7vw 7vw}
 .p-hero h1{font-size:clamp(42px,6.6vw,100px);line-height:.92;letter-spacing:-.03em;font-weight:900;margin:0;max-width:1100px}
-.p-body{padding:6vw 7vw 8vw;max-width:860px}
+.p-body{padding:6vw 7vw 8vw;max-width:860px;margin:0 auto}
 .p-body h2{font-size:clamp(26px,3vw,40px);line-height:1.05;margin:0 0 22px;letter-spacing:-.02em}
 .p-body p{font-size:19px;line-height:1.72;margin:0 0 24px}
 .pull{font-size:clamp(24px,3vw,40px);font-weight:900;line-height:1.05;letter-spacing:-.02em;margin:0 0 28px}
