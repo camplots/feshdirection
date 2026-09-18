@@ -27,8 +27,8 @@ a{color:inherit;text-decoration:none}
 .b-secnum{font-size:clamp(18px,1.8vw,24px);font-weight:900;letter-spacing:.06em;color:var(--blue);padding-top:10px}
 .b-sec-head-text{flex:1;min-width:0}
 .b-count{font-size:11px;letter-spacing:.14em;font-weight:800;color:var(--muted);white-space:nowrap;padding-top:16px}
-.b-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:26px 0 12px}
-.b-card{display:block;border:2px solid var(--ink);background:#fff;padding:30px;box-shadow:10px 10px 0 var(--sun)}
+.b-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin:30px 0 16px}
+.b-card{display:block;border:2px solid var(--ink);background:#fff;padding:34px;box-shadow:8px 8px 0 var(--sun)}
 .b-section{font-size:clamp(30px,4.4vw,58px);line-height:.95;margin:0;font-weight:900;letter-spacing:-.025em;max-width:920px}
 .b-section-sub{font-size:17px;line-height:1.55;color:var(--muted);max-width:660px;margin:12px 0 0}
 .b-chip{display:inline-block;background:var(--sun);color:var(--ink);padding:8px 12px;font-size:11px;font-weight:800;letter-spacing:.1em}
@@ -159,7 +159,7 @@ td.batt{background:#f8cd2a24}
 .disclaimer{border-top:3px solid var(--ink);padding-top:24px;font-size:13px;line-height:1.65;color:var(--muted)}
 
 /* ---------- article lists ---------- */
-.a-list{list-style:none;padding:0;margin:0 0 28px;display:grid;gap:12px}
+.a-list{list-style:none;padding:0;margin:0 0 30px;display:grid;gap:14px}
 .a-list li{position:relative;font-size:18px;line-height:1.6;color:inherit}
 .a-list.dots li{padding-left:30px}
 .a-list.dots li::before{content:"";position:absolute;left:2px;top:.62em;width:10px;height:10px;background:var(--sun);box-shadow:2px 2px 0 var(--ink)}
@@ -236,7 +236,7 @@ td.batt{background:#f8cd2a1f}
 .warning{color:#111821}
 .cta{color:#111821}
 .b-chip,.b-read{color:#111821}
-.b-card{background:#161d27;box-shadow:10px 10px 0 var(--sun)}
+.b-card{background:#161d27;box-shadow:8px 8px 0 var(--sun)}
 .fnum,.faq-item .n,.faq-item summary::after,.group-label{color:#93a5f5}
 .b-card:hover .b-title{color:#93a5f5}
 .a-toc a{border-left-color:#f7f1e422}
