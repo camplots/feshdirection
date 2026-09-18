@@ -13,7 +13,7 @@ a{color:inherit;text-decoration:none}
 .links a{color:inherit}
 
 /* ---------- blog index ---------- */
-.b-hero{background:var(--blue);color:#fff;padding:22vh 7vw 8vw}
+.b-hero{background:#111821;color:#fff;padding:22vh 7vw 8vw}
 .b-hero .eyebrow{font-size:12px;letter-spacing:.15em;font-weight:bold;color:var(--sun)}
 .b-hero h1{font-size:clamp(60px,10vw,150px);line-height:.85;margin:24px 0 0;font-weight:900;letter-spacing:-.03em}
 .b-list{padding:5vw 7vw 9vw}
@@ -111,6 +111,12 @@ figcaption b{display:block;color:var(--ink);font-size:14px}
 .band .a-section{margin:0}
 .band h2{border-top:0;padding-top:0}
 .band.blue{background:var(--blue);color:#fff}
+.band.green{background:var(--green);color:#111821}
+.band.green .checks li::before{background:var(--ink);color:var(--green)}
+.band.green figcaption{color:#11182199}
+.band.green figcaption b{color:#111821}
+.band.ink .principle{background:var(--sun);color:#111821;box-shadow:14px 14px 0 var(--green)}
+.band.ink .principle .tag{color:#111821}
 .band.sun{background:var(--sun);color:#111821}
 .band.ink{background:var(--ink);color:#fff}
 .band.blue .numrow,.band.blue .finding,.band.ink .numrow{border-top-color:#ffffff55}
