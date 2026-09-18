@@ -58,9 +58,28 @@
 .inkclose .ii-list{margin:0 0 28px}
 .sourcenote{font-size:13px;line-height:1.6;color:var(--muted);border-top:2px solid var(--ink);padding-top:20px;margin:48px 0 0}
 .inkclose .sourcenote{border-top-color:#ffffff40;color:#f7f1e499;margin-top:56px}
-@media(max-width:760px){.checks,.splitlists{grid-template-columns:1fr}.steps4{grid-template-columns:1fr 1fr}.numrow{grid-template-columns:52px 1fr}.ii-stat{padding:30px;gap:24px}.sunblock{padding:34px 24px}.xcards{grid-template-columns:1fr}}
+@media(max-width:760px){.checks,.splitlists{grid-template-columns:1fr}.steps4{grid-template-columns:1fr 1fr}.numrow{grid-template-columns:52px 1fr}.ii-stat{padding:30px;gap:24px}.sunblock{padding:34px 24px}.xcards{grid-template-columns:1fr}.cases3{grid-template-columns:1fr}.vs{grid-template-columns:1fr}.xcards.two{grid-template-columns:1fr}}
 .xcards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:28px 0 0}
+.xcards.two{grid-template-columns:1fr 1fr}
 .xcard{border:2px solid var(--ink);padding:26px;box-shadow:10px 10px 0 var(--blue)}
 .xcard h3{font-size:20px;margin:0 0 12px;letter-spacing:-.02em}
 .xcard p{font-size:15px;line-height:1.5;margin:0 0 18px}
+.coststack{margin:36px 0;display:grid;gap:18px}
+.cs-row .cs-label{font-size:14px;font-weight:800;letter-spacing:.06em;margin:0 0 8px}
+.cs-row .track{height:16px;background:#ffffff33}
+.cs-row .track i{display:block;height:100%;background:var(--sun)}
+.cs-total{margin-top:26px}
+.cs-total b{display:block;font-size:clamp(44px,5.4vw,80px);font-weight:900;letter-spacing:-.04em;line-height:1}
+.cs-total span{font-size:12px;letter-spacing:.12em;font-weight:bold;color:#f7f1e4b3}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:36px 0}
+.vs .cell{border:2px solid #111821;background:#fff;padding:26px;box-shadow:8px 8px 0 #111821}
+.vs .cell b{display:block;font-size:clamp(40px,5vw,72px);font-weight:900;letter-spacing:-.03em;color:#111821}
+.vs .cell span{font-size:12px;letter-spacing:.1em;font-weight:bold;color:var(--muted)}
+.vs .track{height:14px;background:#11182122;margin-top:18px}
+.vs .track i{display:block;height:100%}
+.feeflow{display:flex;align-items:stretch;gap:14px;flex-wrap:wrap;margin:36px 0}
+.ff-cell{border:2px solid #f7f1e4;padding:22px 26px;flex:1;min-width:200px}
+.ff-cell b{display:block;font-size:clamp(30px,3.4vw,48px);font-weight:900;letter-spacing:-.03em}
+.ff-cell span{font-size:12px;letter-spacing:.1em;font-weight:bold;color:#f7f1e4b3}
+.ff-op{align-self:center;font-size:28px;font-weight:900}
 @media(max-width:480px){.steps4{grid-template-columns:1fr}}
