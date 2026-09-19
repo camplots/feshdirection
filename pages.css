@@ -12,7 +12,7 @@
 .calc-page .nav{position:relative;flex:none}
 .calc-main{flex:1;min-height:0}
 .calc-main iframe{display:block;width:100%;height:100%;border:0;background:#0b0f14}
-.footnav{display:flex;flex-wrap:wrap;gap:14px 26px;margin:0 0 60px;font-size:12px;letter-spacing:.08em}
+.footnav{display:flex;flex-wrap:wrap;gap:14px 26px;margin:0 0 60px;font-size:13px;letter-spacing:.08em}
 .footnav a{color:#ffffffb3}
 .footnav a:hover{color:var(--sun)}
 .footer-slim{padding:26px 7vw}
@@ -28,11 +28,11 @@
 .p-sec{margin:0 0 72px}
 .ii-stat{background:var(--coral);color:#111821;padding:44px;display:flex;gap:40px;align-items:center;flex-wrap:wrap;margin:0 0 28px;box-shadow:12px 12px 0 var(--ink)}
 .ii-stat .big{font-size:clamp(56px,8vw,120px);font-weight:900;letter-spacing:-.04em;line-height:1}
-.ii-stat p{max-width:520px;font-size:17px;line-height:1.5;margin:0}
+.ii-stat p{max-width:520px;font-size:19px;line-height:1.5;margin:0}
 .ii-green{background:var(--green);color:#111821;padding:30px;font-size:19px;line-height:1.5;box-shadow:10px 10px 0 var(--ink);margin:0 0 28px}
 .checks{list-style:none;padding:0;margin:0 0 28px;display:grid;grid-template-columns:1fr 1fr;gap:14px 26px}
-.checks li{padding-left:34px;position:relative;font-size:17px;line-height:1.45}
-.checks li::before{content:"✓";position:absolute;left:0;top:2px;width:20px;height:20px;background:var(--green);color:#111821;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900}
+.checks li{padding-left:40px;position:relative;font-size:18px;line-height:1.6}
+.checks li::before{content:"✓";position:absolute;left:0;top:1px;width:22px;height:22px;background:var(--green);color:#111821;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900}
 .numrow{display:grid;grid-template-columns:84px 1fr;gap:22px;border-top:2px solid var(--ink);padding:30px 0}
 .numrow:last-of-type{border-bottom:2px solid var(--ink)}
 .numrow h3{font-size:22px;margin:0 0 12px;letter-spacing:-.02em}
@@ -47,7 +47,7 @@
 .steps4 p{font-size:15px;line-height:1.5;margin:0}
 .splitlists{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin:0 0 28px}
 .splitlists>div{border:2px solid var(--ink);padding:28px}
-.splitlists h3{font-size:14px;letter-spacing:.12em;margin:0 0 18px}
+.splitlists h3{font-size:20px;letter-spacing:.12em;margin:0 0 18px;line-height:1.2}
 .partner{border:2px solid var(--ink);padding:30px;box-shadow:12px 12px 0 var(--green);margin:0 0 28px;max-width:520px}
 .partner b{font-size:22px;display:block;letter-spacing:.02em}
 .partner span{font-size:13px;letter-spacing:.1em;color:var(--muted);display:block;margin-top:10px}
