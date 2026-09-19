@@ -5,27 +5,38 @@
 <title>The Industry — Watts Better</title>
 <link rel="stylesheet" href="/blog/blog.css"><link rel="stylesheet" href="/pages.css">
 <style>
+.the-industry .p-sec{margin:0 0 48px}
+.the-industry .p-sec:last-child{margin-bottom:0}
+.the-industry .band+.band{margin-top:-1px}
 .industry-hero{background:linear-gradient(160deg,#111821 0%,#1a2744 50%,#2d4a6a 100%);position:relative;overflow:hidden}
 .industry-hero::before{content:'';position:absolute;top:-20%;right:-10%;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(248,205,42,.12) 0%,transparent 70%);pointer-events:none}
 .stat-row{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:36px 0}
 .stat-card{background:#fff;border:1px solid #11182110;padding:36px;border-radius:8px;box-shadow:0 4px 24px #1118210a}
 .stat-card .num{font-family:'Inter',Arial,sans-serif;font-size:clamp(44px,5vw,72px);font-weight:900;letter-spacing:-.04em;line-height:.9;color:var(--blue);margin-bottom:12px}
+.stat-card:nth-child(2) .num{color:var(--coral)}
 .stat-card .label{font-size:17px;line-height:1.5;color:#111821cc}
-.divider{height:1px;background:linear-gradient(90deg,transparent,#11182114,transparent);margin:48px 0}
-.callout-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:40px 0}
-.callout-item{padding:28px;border-left:3px solid var(--sun);background:#f8cd2a08;border-radius:0 6px 6px 0}
+.callout-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:32px 0}
+.callout-item{padding:28px;border-left:3px solid var(--blue);background:#2849c908;border-radius:0 6px 6px 0}
+.callout-item:nth-child(2){border-left-color:var(--sun);background:#f8cd2a08}
+.callout-item:nth-child(3){border-left-color:var(--coral);background:#ef684b08}
 .callout-item .cl-num{font-family:'Inter',Arial,sans-serif;font-size:14px;font-weight:800;color:var(--blue);letter-spacing:.08em;margin-bottom:8px}
+.callout-item:nth-child(2) .cl-num{color:var(--sun)}
+.callout-item:nth-child(3) .cl-num{color:var(--coral)}
 .callout-item .cl-text{font-size:18px;line-height:1.5;font-weight:600;color:var(--ink)}
-.takeaway-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:40px 0}
+.takeaway-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:32px 0}
 .takeaway-card{background:#fff;border:1px solid #11182110;border-radius:8px;padding:32px;box-shadow:0 4px 24px #1118210a;transition:transform .2s,box-shadow .2s}
 .takeaway-card:hover{transform:translateY(-2px);box-shadow:0 8px 32px #11182114}
 .takeaway-card .tk-num{font-family:'Inter',Arial,sans-serif;font-size:48px;font-weight:900;color:var(--sun);letter-spacing:-.03em;line-height:1;margin-bottom:16px}
+.takeaway-card:nth-child(2) .tk-num{color:var(--blue)}
+.takeaway-card:nth-child(3) .tk-num{color:var(--green)}
+.takeaway-card:nth-child(4) .tk-num{color:var(--coral)}
 .takeaway-card h3{font-family:'Inter',Arial,sans-serif;font-size:20px;font-weight:700;margin:0 0 10px;letter-spacing:-.02em}
 .takeaway-card p{font-size:17px;line-height:1.55;margin:0;color:#111821cc}
+.key-stat{font-family:'Inter',Arial,sans-serif;font-size:clamp(20px,2.5vw,28px);font-weight:700;line-height:1.4;letter-spacing:-.02em;color:var(--blue);border-left:4px solid var(--blue);padding-left:24px;margin:32px 0}
 @media(max-width:760px){.stat-row,.takeaway-grid{grid-template-columns:1fr}.callout-strip{grid-template-columns:1fr}}
 </style>
 </head>
-<body>
+<body class="the-industry">
 <nav class="nav"><a class="logo" href="/"><span class="lw">WATTS</span><i class="ldot"></i><span class="lb">Better</span></a><div class="links"><a href="/#explore">EXPLORE</a><a href="/#verify">VERIFY</a><a href="/#how">HOW IT WORKS</a><a href="/how-we-are-paid">HOW WE'RE PAID</a><a href="/blog">KNOWLEDGE</a><a href="/calculator">START →</a></div></nav>
 
 <header class="p-hero industry-hero">
@@ -46,7 +57,7 @@
 <section class="band ink"><div class="band-in"><section class="p-sec">
 <h2>THE COMPLIANCE PICTURE</h2>
 <p>The Clean Energy Regulator inspects a statistically significant sample of battery installations that claim the federal rebate.</p>
-<p>As at 30 June 2026, it had inspected 3,425 — 718 of them in Queensland.</p>
+<p class="key-stat">As at 30 June 2026, it had inspected 3,425 — 718 of them in Queensland.</p>
 <div class="table-wrap"><table>
 <tr><th>Rating</th><th>Share of inspections</th><th>What it means</th></tr>
 <tr><td>Substandard (technical non-compliance)</td><td>62.28%</td><td>Must be rectified by the installer. Safe to remain in operation.</td></tr>
@@ -59,13 +70,7 @@
 <div class="principle"><div class="tag">THE REGULATOR'S WORDS</div><p>"Substandard" does not mean the whole system is a dud. Typically, it is one or two items found in the installation that does not affect performance but may affect those working on or around the system in future.</p></div>
 <p>The CER also cautions that it's early days: "It's too early to draw strong conclusions about the rate of technical compliance under the scheme."</p>
 <p>Queensland's rate is the highest of the states the report covers.</p>
-</section></div></section>
-
-<section class="band cream"><div class="band-in"><section class="p-sec">
 <div class="principle" style="box-shadow:16px 16px 0 var(--green)"><div class="tag">THE KEY FINDING</div><p>No installation had a problem with the battery itself. Every issue was non-compliant installation practice and substandard workmanship. — Clean Energy Regulator</p></div>
-</section></div></section>
-
-<section class="band cream"><div class="band-in"><section class="p-sec">
 <p>The most common failure isn't exotic. It's labelling:</p>
 <div class="callout-strip">
 <div class="callout-item"><div class="cl-num">01</div><div class="cl-text">Warning labels at the main switchboard and any intermediate distribution board</div></div>
@@ -163,5 +168,5 @@
 <p class="sourcenote">Last updated: 19th September 2026 — this page is reviewed as the regulator publishes new inspection results and as incentive settings change.</p>
 </section></div></section>
 
-<footer class="footer"><div class="footer-grid"><div class="footer-brand"><div class="logo"><span class="lw">WATTS</span><i class="ldot"></i><span class="lb">Better</span></div><p>Independent solar decisions for Queensland homeowners.</p></div><div class="footer-col"><h4>Products</h4><a href="/the-report">The Report</a><a href="/calculator">The Calculator</a><a href="/installation-inspections">Installation Inspections</a></div><div class="footer-col"><h4>Company</h4><a href="/about-us">About Us</a><a href="/how-we-are-paid">How We're Paid</a><a href="/how-introductions-work">How Introductions Work</a><a href="/contact-us">Contact Us</a></div><div class="footer-col"><h4>Learn</h4><a href="/blog">Knowledge</a><a href="/tools">Tools</a><a href="/the-industry">The Industry</a></div></div><div class="footline"><span><a href="/privacy">Privacy</a> � <a href="/privacy#terms">Terms</a></span><span>Independent Solar Decisions</span></div></footer>
+<footer class="footer"><div class="footer-grid"><div class="footer-brand"><div class="logo"><span class="lw">WATTS</span><i class="ldot"></i><span class="lb">Better</span></div><p>Independent solar decisions for Queensland homeowners.</p></div><div class="footer-col"><h4>Products</h4><a href="/the-report">The Report</a><a href="/calculator">The Calculator</a><a href="/installation-inspections">Installation Inspections</a></div><div class="footer-col"><h4>Company</h4><a href="/about-us">About Us</a><a href="/how-we-are-paid">How We're Paid</a><a href="/how-introductions-work">How Introductions Work</a><a href="/contact-us">Contact Us</a></div><div class="footer-col"><h4>Learn</h4><a href="/blog">Knowledge</a><a href="/tools">Tools</a><a href="/the-industry">The Industry</a></div></div><div class="footline"><span><a href="/privacy">Privacy</a> · <a href="/privacy#terms">Terms</a></span><span>Independent Solar Decisions</span></div></footer>
 </body></html>
