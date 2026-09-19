@@ -139,6 +139,7 @@ figcaption b{display:block;color:var(--ink);font-size:16px;font-weight:700}
 .band-in{max-width:880px;margin:0 auto}
 .band .a-section{margin:0}
 .band .p-sec p{font-size:20px;line-height:1.75;color:#111821cc}
+.band .p-sec .principle p{font-size:clamp(24px,2.8vw,34px);line-height:1.3;letter-spacing:-.025em;margin:20px 0 0;font-weight:700;color:var(--paper)}
 .band .p-sec h2{border-top:0;padding-top:0;font-family:'Inter',Arial,sans-serif;font-size:clamp(28px,3.4vw,44px);font-weight:800;letter-spacing:-.025em;color:var(--ink);margin:0 0 28px}
 .band.ink .p-sec h2{color:#f7f1e4}
 .band.sun .p-sec h2{color:#111821}
