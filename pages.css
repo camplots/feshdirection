@@ -126,12 +126,8 @@
 .ff-cell span{font-size:12px;letter-spacing:.12em;font-weight:700;color:#f7f1e480}
 .ff-op{align-self:center;font-size:32px;font-weight:900}
 
-/* ---- footer ---- */
-.footnav{display:flex;flex-wrap:wrap;gap:14px 28px;margin:0 0 64px;font-size:13px;letter-spacing:.08em}
-.footnav a{color:#ffffffaa;transition:color .2s}
-.footnav a:hover{color:var(--sun)}
+/* ---- footer (pages) ---- */
 .footer-slim{padding:28px 7vw}
-.footer-slim .footnav{margin:0;gap:12px 20px}
 
 /* ---- responsive ---- */
 @media(max-width:760px){
