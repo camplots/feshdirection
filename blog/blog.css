@@ -244,6 +244,17 @@ section{scroll-margin-top:90px}
 
 @media (prefers-color-scheme: dark){
 :root{--ink:#f7f1e4;--paper:#111821;--muted:#9ca3af}
+body{background:#111821;color:#111821}
+.b-list{background:var(--paper);color:var(--ink)}
+.b-card{background:#fff;box-shadow:12px 12px 0 #f8cd2a1a}
+.b-card:hover{box-shadow:16px 16px 0 #f8cd2a30}
+.b-card:nth-child(odd){box-shadow:12px 12px 0 #2849c91a}
+.b-card:nth-child(odd):hover{box-shadow:16px 16px 0 #2849c926}
+.b-excerpt{color:#111821cc}
+.b-meta{color:var(--muted)}
+.b-sec-head{border-top-color:#111821}
+.b-section{color:#111821}
+.b-section-sub{color:var(--muted)}
 .a-hero{background:#111821;color:#f7f1e4}
 .case{background:#161d27}
 .mathblock .cell{background:#161d27}
@@ -257,13 +268,13 @@ td.batt{background:#f8cd2a14}
 .principle .tag{color:#111821}
 .warning{color:#111821}
 .cta{color:#111821}
-.b-chip,.b-read{color:#111821}
-.b-card{background:#161d27;box-shadow:12px 12px 0 #f8cd2a1a}
-.b-card:hover{box-shadow:16px 16px 0 #f8cd2a30}
 .fnum,.faq-item .n,.faq-item summary::after,.group-label{color:#93a5f5}
-.b-card:hover .b-title{color:#93a5f5}
+.b-card:hover .b-title{color:var(--blue)}
 .a-toc a{border-left-color:#f7f1e414}
 .sources li{border-color:#f7f1e414}
 .footer{background:#0b1017}
+.footer-col a{color:#ffffffaa}
+.footer-col h4{color:#ffffff50}
+.footer-brand p{color:#ffffff66}
 .photo-slot{background:#f7f1e408}
 }
