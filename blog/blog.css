@@ -122,7 +122,8 @@ figcaption b{display:block;color:var(--ink);font-size:14px}
 .band{padding:6vw 7vw}
 .band-in{max-width:880px;margin:0 auto}
 .band .a-section{margin:0}
-.band h2{border-top:0;padding-top:0}
+.band .p-sec p{font-size:20px;line-height:1.7}
+.band .p-sec h2{border-top:0;padding-top:0}
 .band.blue{background:var(--blue);color:#fff}
 .band.green{background:var(--green);color:#111821}
 .band.green .checks li::before{background:var(--ink);color:var(--green)}
