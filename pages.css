@@ -36,7 +36,7 @@
 .numrow{display:grid;grid-template-columns:84px 1fr;gap:22px;border-top:2px solid var(--ink);padding:30px 0}
 .numrow:last-of-type{border-bottom:2px solid var(--ink)}
 .numrow h3{font-size:22px;margin:0 0 12px;letter-spacing:-.02em}
-.numrow p{font-size:17px;line-height:1.6;margin:0 0 14px}
+.numrow p{font-size:19px;line-height:1.6;margin:0 0 14px}
 .numrow ul,.splitlists ul,.ii-list{list-style:none;padding:0;margin:0 0 14px;display:grid;gap:8px}
 .numrow ul li,.splitlists ul li,.ii-list li{padding-left:22px;position:relative;font-size:16px;line-height:1.45}
 .numrow ul li::before,.splitlists ul li::before,.ii-list li::before{content:"";position:absolute;left:0;top:9px;width:10px;height:3px;background:var(--sun)}
