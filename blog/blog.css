@@ -72,7 +72,7 @@ a{color:inherit;text-decoration:none}
 
 .principle{background:var(--ink);color:var(--paper);padding:48px;margin:60px 0;box-shadow:16px 16px 0 var(--sun);border-radius:6px}
 .principle .tag{font-size:11px;letter-spacing:.18em;font-weight:700;color:var(--sun)}
-.principle p{font-size:clamp(24px,2.8vw,34px);line-height:1.3;letter-spacing:-.025em;margin:20px 0 0;font-weight:700}
+.principle p{font-size:clamp(24px,2.8vw,34px);line-height:1.3;letter-spacing:-.025em;margin:20px 0 0;font-weight:700;color:var(--paper)}
 
 .cases{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin:52px 0}
 .case{border:1px solid #11182114;background:#fff;padding:32px;border-radius:6px}
@@ -160,6 +160,12 @@ figcaption b{display:block;color:var(--ink);font-size:16px;font-weight:700}
 .band.ink .group-label{color:var(--sun)}
 .band.blue figcaption,.band.ink figcaption{color:#ffffff99}
 .band.blue figcaption b,.band.ink figcaption b{color:#fff}
+.band.ink p,.band.ink li,.band.ink td,.band.ink .defline,.band.ink .finding p,.band.ink .lever p,.band.ink .faq-a p,.band.ink .sources li,.band.ink .numrow p{color:#f7f1e4cc}
+.band.ink .mathblock .cell b,.band.ink .mathblock .cell span{color:var(--ink)}
+.band.ink .cs-total span,.band.ink .ff-cell span{color:#f7f1e480}
+.inkclose .cs-total span,.inkclose .ff-cell span{color:#f7f1e480}
+.band.blue p,.band.blue li,.band.blue td,.band.blue .defline,.band.blue .finding p,.band.blue .lever p,.band.blue .faq-a p,.band.blue .sources li,.band.blue .numrow p{color:#fff}
+.band.blue .mathblock .cell b,.band.blue .mathblock .cell span{color:var(--ink)}
 .toc-band{background:var(--paper);padding:24px 7vw;border-bottom:1px solid #11182114}
 .toc-band b{font-size:11px;letter-spacing:.18em;color:var(--muted);margin-right:20px;font-weight:700}
 .toc-band a{display:inline-block;margin:4px 22px 4px 0;font-size:14px;color:var(--muted);font-weight:500;transition:color .2s}
@@ -260,7 +266,16 @@ body{background:var(--paper);color:var(--ink)}
 .b-read:hover{background:#e6bd22}
 .b-chip{color:var(--ink)}
 .a-hero{background:#111821;color:#f7f1e4}
-.case{background:#1a2230}
+.case{background:#1a2230;color:var(--ink)}
+.case p{color:var(--ink)}
+.case .tag{color:var(--muted)}
+.case .big{color:var(--ink)}
+.case .sub{color:var(--muted)}
+.xcard{background:#1a2230;color:var(--ink)}
+.xcard p{color:var(--ink)}
+.xcard h3{color:var(--ink)}
+.vs .cell{background:#1a2230;color:var(--ink)}
+.vs .cell b{color:var(--ink)}
 .mathblock .cell{background:#1a2230}
 .band.ink{background:#f7f1e4;color:#111821}
 .band.ink .lever,.band.ink .numrow{border-top-color:#11182120}
