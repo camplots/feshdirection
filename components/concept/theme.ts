@@ -1,0 +1,6 @@
+export const MINT = '#8AEFC1'
+export const YELLOW = '#F5F65A'
+export const LAVENDER = '#D8C4F7'
+export const NAVY = '#151338'
+export const PEACH = '#FFC98B'
+export const PINK = '#F45FA0'

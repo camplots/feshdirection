@@ -1,0 +1,194 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+  --font-mono: var(--font-mono);
+  --color-paper: var(--paper);
+  --color-paper-dark: var(--paper-dark);
+  --color-paper-deep: var(--paper-deep);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-copper: var(--copper);
+  --color-copper-deep: var(--copper-deep);
+  --color-copper-soft: var(--copper-soft);
+  --color-copper-mist: var(--copper-mist);
+  --color-oxblood: var(--oxblood);
+  --color-oxblood-deep: var(--oxblood-deep);
+  --color-oxblood-soft: var(--oxblood-soft);
+  --color-oxblood-mist: var(--oxblood-mist);
+  --color-ink-deep: var(--ink-deep);
+  --color-rule: var(--rule);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  color-scheme: light;
+
+  /* Brand — concept neo-brutalist palette */
+  --paper: #ffffff;
+  --paper-dark: #f2ecfb;
+  --paper-deep: #e6dbf7;
+  --ink: #111111;
+  --ink-soft: #444444;
+  --copper: #f45fa0;
+  --copper-deep: #c63f7e;
+  --copper-soft: #fbbfd9;
+  --copper-mist: #fdeaf2;
+  --oxblood: #151338;
+  --oxblood-deep: #151338;
+  --oxblood-soft: #4b4780;
+  --oxblood-mist: #e3e1f0;
+  --ink-deep: #151338;
+  --rule: #111111;
+
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --card: oklch(0.995 0.006 84);
+  --card-foreground: var(--ink);
+  --popover: oklch(0.995 0.006 84);
+  --popover-foreground: var(--ink);
+  --primary: var(--copper);
+  --primary-foreground: oklch(0.99 0.006 84);
+  --secondary: var(--oxblood);
+  --secondary-foreground: oklch(0.99 0.006 84);
+  --muted: var(--paper-dark);
+  --muted-foreground: var(--ink-soft);
+  --accent: var(--copper-soft);
+  --accent-foreground: var(--copper-deep);
+  --destructive: oklch(0.55 0.19 25);
+  --border: var(--rule);
+  --input: var(--rule);
+  --ring: var(--copper);
+  --chart-1: var(--copper);
+  --chart-2: var(--oxblood);
+  --chart-3: oklch(0.6 0.02 70);
+  --chart-4: oklch(0.75 0.03 70);
+  --chart-5: oklch(0.4 0.02 70);
+  --radius: 0.25rem;
+  --sidebar: var(--paper-dark);
+  --sidebar-foreground: var(--ink);
+  --sidebar-primary: var(--copper);
+  --sidebar-primary-foreground: oklch(0.99 0.006 84);
+  --sidebar-accent: var(--copper-soft);
+  --sidebar-accent-foreground: var(--copper-deep);
+  --sidebar-border: var(--rule);
+  --sidebar-ring: var(--copper);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  .font-display {
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .bg-grain {
+    background-image: radial-gradient(oklch(0.2 0.01 60 / 0.05) 1px, transparent 1px);
+    background-size: 3px 3px;
+  }
+
+  /* Faint ledger cross-hatch — for paper-toned sections that want depth
+     without a photographic texture. Two offset linear-gradients at a
+     shallow angle, tuned low-contrast against the paper base. */
+  .bg-ledger {
+    background-image:
+      repeating-linear-gradient(
+        118deg,
+        oklch(0.19 0.012 60 / 0.05) 0px,
+        oklch(0.19 0.012 60 / 0.05) 1px,
+        transparent 1px,
+        transparent 26px
+      ),
+      repeating-linear-gradient(
+        28deg,
+        oklch(0.19 0.012 60 / 0.035) 0px,
+        oklch(0.19 0.012 60 / 0.035) 1px,
+        transparent 1px,
+        transparent 26px
+      );
+  }
+
+  /* Same cross-hatch tuned for dark (ink/oxblood) backgrounds. */
+  .bg-ledger-dark {
+    background-image:
+      repeating-linear-gradient(
+        118deg,
+        oklch(0.97 0.012 84 / 0.05) 0px,
+        oklch(0.97 0.012 84 / 0.05) 1px,
+        transparent 1px,
+        transparent 26px
+      ),
+      repeating-linear-gradient(
+        28deg,
+        oklch(0.97 0.012 84 / 0.035) 0px,
+        oklch(0.97 0.012 84 / 0.035) 1px,
+        transparent 1px,
+        transparent 26px
+      );
+  }
+
+  /* Letterpress: a hard, close offset shadow that reads as a stamped
+     impression rather than a soft drop shadow. Use on display headline
+     words that should feel pressed into the page. */
+  .text-stamp {
+    text-shadow: 1.5px 1.5px 0 oklch(0.19 0.012 60 / 0.16);
+  }
+  .text-stamp-copper {
+    text-shadow: 1.5px 1.5px 0 oklch(0.58 0.165 41 / 0.28);
+  }
+  .text-stamp-light {
+    text-shadow: 1.5px 1.5px 0 oklch(0 0 0 / 0.35);
+  }
+}
